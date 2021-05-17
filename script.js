@@ -1,16 +1,20 @@
-document.getElementById('Rectangle').addEventListener('click', RecCal)
-document.getElementById('Square').addEventListener('click', SquCal)
-document.getElementById('Parallelogram').addEventListener('click', ParCal)
-document.getElementById('Trapezoid').addEventListener('click', TraCal)
-document.getElementById('Triangle').addEventListener('click', TriCal)
-document.getElementById('Circle').addEventListener('click', CirCal)
-document.getElementById('Pythagorean').addEventListener('click', PythCal)
-document.getElementById('Cone').addEventListener('click', ConCal)
-document.getElementById('Distance').addEventListener('click', DisCal)
-document.getElementById('Cylinder').addEventListener('click', CylCal)
-document.getElementById('Cube').addEventListener('click',CubCal)
-document.getElementById('Midpoint').addEventListener('click',MidCal)
+/* Here all the neccesary, click events that I have setup */
+
+document.getElementById('rectangle').addEventListener('click', RecCal)
+document.getElementById('square').addEventListener('click', SquCal)
+document.getElementById('parallelogram').addEventListener('click', ParCal)
+document.getElementById('trapezoid').addEventListener('click', TraCal)
+document.getElementById('triangle').addEventListener('click', TriCal)
+document.getElementById('circle').addEventListener('click', CirCal)
+document.getElementById('pythagorean').addEventListener('click', PythCal)
+document.getElementById('cone').addEventListener('click', ConCal)
+document.getElementById('distance').addEventListener('click', DisCal)
+document.getElementById('cylinder').addEventListener('click', CylCal)
+document.getElementById('cube').addEventListener('click',CubCal)
+document.getElementById('midpoint').addEventListener('click',MidCal)
 document.getElementById('start').addEventListener('click', Begin)
+
+/* All the varables are setup */
 
 let a = 0
 let b = 0
@@ -21,7 +25,12 @@ let stepa = 0
 let piething = Math.PI
 let secret = 0
 let text = ""
+
+/* This is the const neccesary for the assignment it will be used later */
+
 const deathtxt = ['HaHAHA⠀', 'Try again⠀', 'REEEEEEE⠀', 'This is a loop with a const⠀', 'this is intended⠀', 'heheheheheh⠀', 'reee⠀', 'You are now trapped⠀', 'Jk, the website will reapper by clicking the ok button.']
+
+/* The functions below are all the calculator functions. There is more comments at the bottom. */
 
 function RecCal () {
   a = document.getElementById('vala').value
@@ -170,18 +179,6 @@ function CylCal () {
   document.getElementById('output').innerHTML = result
 }
 
-function SquCal () {
-  a = document.getElementById('vala').value
-
-  a = parseFloat(a)
-
-  result = a * a * a
-
-  document.getElementById('equation').innerHTML = "the Volume of a Cube "
-  document.getElementById('output').innerHTML = result
-
-}
-
 function CubCal () {
   a = document.getElementById('vala').value
 
@@ -197,11 +194,13 @@ function CubCal () {
 function MidCal () {
   a = document.getElementById('vala').value
   b = document.getElementById('valb').value
+
   c = document.getElementById('valc').value
   d = document.getElementById('vald').value
 
   a = parseFloat(a)
   b = parseFloat(b)
+  
   c = parseFloat(c)
   d = parseFloat(d)
 
@@ -214,11 +213,15 @@ function MidCal () {
   document.getElementById('output2').innerHTML = stepa
 }
 
+/* The functions below are working to produce the simple game that is acitivated by the onclick button */
+
 function Begin () {
   alert('A new link as appered on the page; FIND IT IN 5 SECONDS, To stop the site from dissappering')
 
   document.getElementById('stage1').style.display = 'block'
 }
+
+/* The function below is a loop that adds text to the alert taking from the const. */
 
 function Stime () {
   alert('Too late and too bad')
