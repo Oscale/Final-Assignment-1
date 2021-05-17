@@ -10,8 +10,8 @@ document.getElementById('pythagorean').addEventListener('click', PythCal)
 document.getElementById('cone').addEventListener('click', ConCal)
 document.getElementById('distance').addEventListener('click', DisCal)
 document.getElementById('cylinder').addEventListener('click', CylCal)
-document.getElementById('cube').addEventListener('click',CubCal)
-document.getElementById('midpoint').addEventListener('click',MidCal)
+document.getElementById('cube').addEventListener('click', CubCal)
+document.getElementById('midpoint').addEventListener('click', MidCal)
 document.getElementById('start').addEventListener('click', Begin)
 
 /* All the varables are setup */
@@ -24,7 +24,7 @@ let result = 0
 let stepa = 0
 let piething = Math.PI
 let secret = 0
-let text = ""
+let text = ''
 
 /* This is the const neccesary for the assignment it will be used later */
 
@@ -41,7 +41,7 @@ function RecCal () {
 
   result = a * b
 
-  document.getElementById('equation').innerHTML = "the area of a Rectangle "
+  document.getElementById('equation').innerHTML = 'the area of a Rectangle '
   document.getElementById('output').innerHTML = result
 }
 
@@ -52,9 +52,8 @@ function SquCal () {
 
   result = a * a
 
-  document.getElementById('equation').innerHTML = "the area of a Square "
+  document.getElementById('equation').innerHTML = 'the area of a Square '
   document.getElementById('output').innerHTML = result
-
 }
 
 function ParCal () {
@@ -66,7 +65,7 @@ function ParCal () {
 
   result = a * b
 
-  document.getElementById('equation').innerHTML = "the area of a Parallelogram "
+  document.getElementById('equation').innerHTML = 'the area of a Parallelogram '
   document.getElementById('output').innerHTML = result
 
 }
@@ -81,11 +80,11 @@ function TraCal () {
   c = parseFloat(c)
   stepa = parseFloat(stepa)
 
-  stepa = (a + b)/2
+  stepa = (a + b) / 2
 
   result = stepa * c
 
-  document.getElementById('equation').innerHTML = "the area of a Trapezoid "
+  document.getElementById('equation').innerHTML = 'the area of a Trapezoid '
   document.getElementById('output').innerHTML = result
 }
 
@@ -96,9 +95,9 @@ function TriCal () {
   a = parseFloat(a)
   b = parseFloat(b)
 
-  result = (a * b)/2
+  result = (a * b) / 2
 
-  document.getElementById('equation').innerHTML = "the area of a Triangle "
+  document.getElementById('equation').innerHTML = 'the area of a Triangle '
   document.getElementById('output').innerHTML = result
 }
 
@@ -110,7 +109,7 @@ function CirCal () {
 
   result = ((a * a) * piething)
 
-  document.getElementById('equation').innerHTML = "the area of a Circle "
+  document.getElementById('equation').innerHTML = 'the area of a Circle '
   document.getElementById('output').innerHTML = result
 }
 
@@ -125,7 +124,7 @@ function PythCal () {
 
   result = Math.sqrt(result)
   
-  document.getElementById('equation').innerHTML = "the result of a Pythagorean Theorem "
+  document.getElementById('equation').innerHTML = 'the result of a Pythagorean Theorem'
   document.getElementById('output').innerHTML = result
 }
 
@@ -137,11 +136,11 @@ function ConCal () {
   b = parseFloat(b)
   stepa = parseFloat(stepa)
   
-  stepa = Math.sqrt((a * a) + (b * b)) 
+  stepa = Math.sqrt((a * a) + (b * b))
 
   result = (piething * b) * stepa
   
-  document.getElementById('equation').innerHTML = "lateral surface area of a cone "
+  document.getElementById('equation').innerHTML = 'lateral surface area of a cone'
   document.getElementById('output').innerHTML = result
 }
 
@@ -161,7 +160,7 @@ function DisCal () {
 
   result = Math.sqrt(stepa)
   
-  document.getElementById('equation').innerHTML = "The distance between the two input points "
+  document.getElementById('equation').innerHTML = 'The distance between the two input points'
   document.getElementById('output').innerHTML = result
 }
 
@@ -175,7 +174,7 @@ function CylCal () {
 
   result = (piething * (a * a)) * b
  
-  document.getElementById('equation').innerHTML = "The Volume of a Cylinder "
+  document.getElementById('equation').innerHTML = 'The Volume of a Cylinder'
   document.getElementById('output').innerHTML = result
 }
 
@@ -186,16 +185,15 @@ function CubCal () {
 
   result = a * a * a
 
-  document.getElementById('equation').innerHTML = "the Volume of a Cube "
+  document.getElementById('equation').innerHTML = 'the Volume of a Cube'
   document.getElementById('output').innerHTML = result
-
 }
 
 function MidCal () {
   a = document.getElementById('vala').value
   b = document.getElementById('valb').value
   /* This is a comment explain the differnce between this code, and some more above.
-  Basically this code has a slightly different purpose in the calculator as it provides two different outputs opposed to one combined output.*/
+  Basically this code has a slightly different purpose in the calculator as it provides two different outputs opposed to one combined output. */
   c = document.getElementById('valc').value
   d = document.getElementById('vald').value
 
@@ -205,11 +203,10 @@ function MidCal () {
   c = parseFloat(c)
   d = parseFloat(d)
 
-  stepa = ((a + c)/2)  
-  result = ((b + d)/2)
-  
-  
-  document.getElementById('equation').innerHTML = 'The coordinates of the midpoints '
+  stepa = ((a + c) / 2)  
+  result = ((b + d) / 2)
+
+  document.getElementById('equation').innerHTML = 'The coordinates of the midpoints'
   document.getElementById('output').innerHTML = result
   document.getElementById('output2').innerHTML = stepa
 }
@@ -238,7 +235,5 @@ function Stime () {
 }
 
 function Break () {
-  if (document.getElementById('killscreen').style.display = 'none') {
-  document.getElementById('killscreen').style.display = 'block'
-  }
+  document.getElementById('killscreen').style.display = 'block' 
 }
