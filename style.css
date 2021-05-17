@@ -1,0 +1,83 @@
+#navagatorbar {
+  background-color: rgb(157, 151, 151);
+  padding: 20px;
+  height: 25px;
+  color: rgb(44, 43, 43);
+  font-size: 175%;
+  border-bottom-style: solid;
+  border-color: chocolate;
+  position: fixed;
+  top: -35px;
+  left: 0;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+#navtext {
+  padding: 20px;
+  height: 25px;
+  position: fixed;
+  top: -18px;
+  left: 150px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.cenbox {
+  width: 95%;
+  margin: 10px;
+  border: 2px transparent;
+  padding: 30px;
+  text-align: center;
+}
+
+.propertext{
+  margin-left: 250px; 
+  margin-right: 250px;
+}
+
+.bigboytext{
+  font-size: 200%;
+}
+
+.nottobigtext {
+  font-size: 120%;
+}
+
+button {
+  border: ridge 4px royalblue;
+  background-color: lightblue;
+}
+
+.fancytext{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#calvisu {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  border: solid gray 4px;
+} 
+
+table {
+  width: 50%;
+  float: left;
+  padding: 5px;
+}
+
+th, td {
+  padding: 5px;
+  background-color: grey ;
+  border: black 2px solid;
+  font-size: 80%;
+}
+
+body {
+  color: whitesmoke;
+  background-color: lightslategray;
+}
+
+#stage1 {
+  display: none;
+}
