@@ -194,13 +194,14 @@ function CubCal () {
 function MidCal () {
   a = document.getElementById('vala').value
   b = document.getElementById('valb').value
-
+  /* This is a comment explain the differnce between this code, and some more above.
+  Basically this code has a slightly different purpose in the calculator as it provides two different outputs opposed to one combined output.*/
   c = document.getElementById('valc').value
   d = document.getElementById('vald').value
 
   a = parseFloat(a)
   b = parseFloat(b)
-  
+
   c = parseFloat(c)
   d = parseFloat(d)
 
