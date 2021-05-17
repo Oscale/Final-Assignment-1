@@ -13,6 +13,7 @@ document.getElementById('cylinder').addEventListener('click', CylCal)
 document.getElementById('cube').addEventListener('click', CubCal)
 document.getElementById('midpoint').addEventListener('click', MidCal)
 document.getElementById('start').addEventListener('click', Begin)
+document.getElementById('navagatorbar').addEventListener('click', Stime)
 
 /* All the varables are setup */
 
@@ -67,7 +68,6 @@ function ParCal () {
 
   document.getElementById('equation').innerHTML = 'the area of a Parallelogram '
   document.getElementById('output').innerHTML = result
-
 }
 
 function TraCal () {
@@ -123,10 +123,10 @@ function PythCal () {
   result = ((a * a) + (b * b))
 
   result = Math.sqrt(result)
-  
+
   document.getElementById('equation').innerHTML = 'the result of a Pythagorean Theorem'
   document.getElementById('output').innerHTML = result
-}
+}]
 
 function ConCal () {
   a = document.getElementById('vala').value
@@ -135,11 +135,10 @@ function ConCal () {
   a = parseFloat(a)
   b = parseFloat(b)
   stepa = parseFloat(stepa)
-  
-  stepa = Math.sqrt((a * a) + (b * b))
 
+  stepa = Math.sqrt((a * a) + (b * b))
   result = (piething * b) * stepa
-  
+
   document.getElementById('equation').innerHTML = 'lateral surface area of a cone'
   document.getElementById('output').innerHTML = result
 }
@@ -159,7 +158,7 @@ function DisCal () {
   stepa = (((a - c) * (a - c)) + ((b - d) * (b - d)))
 
   result = Math.sqrt(stepa)
-  
+
   document.getElementById('equation').innerHTML = 'The distance between the two input points'
   document.getElementById('output').innerHTML = result
 }
@@ -173,7 +172,7 @@ function CylCal () {
   piething = parseFloat(piething)
 
   result = (piething * (a * a)) * b
- 
+
   document.getElementById('equation').innerHTML = 'The Volume of a Cylinder'
   document.getElementById('output').innerHTML = result
 }
@@ -203,7 +202,7 @@ function MidCal () {
   c = parseFloat(c)
   d = parseFloat(d)
 
-  stepa = ((a + c) / 2)  
+  stepa = ((a + c) / 2)
   result = ((b + d) / 2)
 
   document.getElementById('equation').innerHTML = 'The coordinates of the midpoints'
@@ -227,7 +226,7 @@ function Stime () {
   document.getElementById('killscreen').style.display = 'none'
 
   for (secret = 0; secret < deathtxt.length; secret++) {
-    alert (text += deathtxt[secret])
+    alert(text += deathtxt[secret])
 
     document.getElementById('killscreen').style.display = 'none'
   }
@@ -235,5 +234,5 @@ function Stime () {
 }
 
 function Break () {
-  document.getElementById('killscreen').style.display = 'block' 
+  document.getElementById('killscreen').style.display = 'block'
 }
