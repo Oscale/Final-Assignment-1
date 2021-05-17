@@ -13,7 +13,7 @@ document.getElementById('cylinder').addEventListener('click', CylCal)
 document.getElementById('cube').addEventListener('click', CubCal)
 document.getElementById('midpoint').addEventListener('click', MidCal)
 document.getElementById('start').addEventListener('click', Begin)
-document.getElementById('navagatorbar').addEventListener('click', Stime)
+document.getElementById('ple').addEventListener('click', Stime)
 
 /* All the varables are setup */
 
