@@ -126,7 +126,7 @@ function PythCal () {
 
   document.getElementById('equation').innerHTML = 'the result of a Pythagorean Theorem'
   document.getElementById('output').innerHTML = result
-}]
+}
 
 function ConCal () {
   a = document.getElementById('vala').value
